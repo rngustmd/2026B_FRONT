@@ -47,6 +47,30 @@
         <a href="exam1.html"> 'exam1' HTML 이동 </a>
         <a href="tel:010-4171-1485"> 모바일에서 전화앱 </a>
 
+        <img src = "./짱구.jpg" />                                     <!-- img : 이미지 마크업 -->
+        <img src = "../짱구.jpg" />
+        <!-- 상대경로란? 현재 코드를 작성하는 위치 기준으로 불러올 파일의 경로 지정 -->
+        <!-- 
+            ./ : 현재폴더이며생략가능
+            ../ : 상위폴더1번이동       , day02 폴더 기준으로 상위폴더 1번이동 하면 2026B_FRONT 경로
+            ../../ : 상위폴더2번이동
+            -->
+            <!-- 절대경로란? 불러올 파일의 전체 경로 지정 , 로컬 vs 서버(네트워크로 자료 제공하는 PC) -->
+            <img src = "C:\Users\HS-KOO\Desktop\2026B_FRONT\day02\짱구.jpg" />
+            <img src = "http://127.0.0.1:5500/day02/짱구.jpg" />
+
+            <br />
+            <audio src="오디오.mp3" controls > </audio>     <!-- audio : 오디오 마크업 -->
+            <video src="비디오.mp4" controls > </video>     <!-- video : 오디오 마크업 -->
+            <!-- autoplay 브라우저 정책상 불가능하다. 단 muted(음소거) 하면 가능하다. -->
+
+            <!-- 유튜브 영상 퍼가기 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DCyEvlGV00o?si=s9zirFeeMKztUepU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- 구글 지도 퍼가기 -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357b67b86fa90ca9%3A0x50ab76efd5310e0d!2z7ISx6rKw64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1783414952169!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+
+
     </body>     <!-- HTML 본문 끝 -->
 
 </html>     <!-- HTML 끝 -->
