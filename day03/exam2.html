@@ -1,34 +1,39 @@
-<!DOCTYPE html>     
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
 
-<html>      
+    <h3> 입력 마크업 </h3>
+    <form> <!-- 여러개 입력 마크업들을 그룹 해주는 역할, 추후에 백엔드 통신 -->
+        텍스트 : <input type="text" value="유재석" />          <br/>
+        비밀번호 : <input type="password" />    <br/>
+        첨부파일 : <input type="file" />        <br/>
+        숫자 : <input type="number" />          <br/>
+        날짜 : <input type="date" />            <br/>
+        시간 : <input type="time" />            <br/>
+        날짜/시간 : <input type="datetime-local" /> <br/>
+        스크롤 : <input type="range" />         <br/>    
+        체크박스(단일) : <input type="radio" name="동의여부" /> 예 
+                       <input type="radio" name="동의여부"/> 아니요        <br/>
+        체크박스(복수) : <input type="checkbox" name="가입경로" /> 뉴스
+                        <input type="checkbox" name="가입경로" /> SNS      <br/>
+        전송버튼 :  <input type="submit" value="전송버튼" />
+        리셋버튼 :  <input type="reset" value="리셋버튼" />
+        일반버튼1:  <input type="button" value="일반버튼" />
+        일반버튼2:  <button type="button"> 일반버튼2 </button>             <br/>
+        긴텍스트 :  <textarea cols="50" rows="30"></textarea>
+        목록상자 :  <select>
+                        <option> 라면 </option>
+                        <option> 김밥 </option>
+                    </select>                                             <br/>
 
-<head>      
-    <meta charset='utf-8'>  
-    <title>HTML PRACTICE</title> 
-  
-</head>     
-<body>      
-    <h1> 에버랜드 이용안내 </h1>
-    
-    <p> ∙ 안전하고 즐거운 이용을 위하여 아래 물품의 반입을 제한합니다. </p>
-    <p> ∙ 동물에게 음식을 주거나 플래시를 켜고 촬영하지 마세요. </p>
-    <p> ∙ 가지고 오신 도시락은 피크닉 영역에서 이용해주세요. </p>
+    </form>
 
-    <p> - 대기 동선에서 기다리기 어려운 장애인 손님을 위하여 탑승 예약을 도와드리고 있으니 근무자에게 문의해 주시기 바랍니다. </p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/4iu9ChAPm3c?si=vuscRV4MWJc7VWLF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <h2> 대중교통 정보 </h2>
-    <h3> 1. 지하철 이용 </h3>
-    <p> 에버라인 종점에 내려서 셔틀버스(무료)로 에버랜드, </p>
-    <p> 캐리비안 베이까지 이동 </p>
-    <p> - 에버라인 운행시간 : 05:30~23:30 </p>
-    <img src = "에버라인.png" />
-
-    <h2> 2. 버스 이용 </h2>
-    <p> - 5002번 : 신논현역 - 강남역 - 양재역 경유 </p>
-    <p> - 5700번 : 강변역 - 잠실역 - 송파역 - 수서역 경유 </p>
-    <p> - 66-4번 : 수원역 - 수원 - 동백 - 용인 경유 </p>
-
-</body>
-
+    </body>
 </html>
