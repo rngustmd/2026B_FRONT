@@ -9,10 +9,10 @@ let 수량 = prompt( '수량 :')
 // prompt()는 문자열(String) 반환
 // // 계산을 하지 않는다면 Number() 미사용
 // 계산을 할 경우 Number(prompt()) 사용
-console.log( '[주문접수]' )
-console.log( '이름 :' , 이름 ) // 변수 저장된 값 출력
-console.log( '메뉴 :' , 메뉴 )
-console.log( '수량 :' , 수량 )
+console.log( `[주문접수]` )
+console.log( `이름 : ${ 이름 }` ) // 변수 저장된 값 출력
+console.log( `메뉴 : ${ 메뉴 }` )
+console.log( `수량 : ${ 수량 }` )
 
 
 
