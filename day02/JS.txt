@@ -22,4 +22,5 @@
     - 1. let result = prompt( )
     - 2. let result = confirm( )
 
-    
+- HTML : 하이퍼텍스트 마크업 언어 * 브라우저에서 렌더링 *
+- JS : 자바스크립트 언어 * HTML 포함된다 *
