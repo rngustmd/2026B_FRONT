@@ -19,3 +19,24 @@
     * autoplay속성 : 자동실행(브라우저정책상 차단)
     * muted속성 : 음소거 제공
     11. <iframe> : 외부 컨텐츠를 포함 (퍼가기)
+
+    12. <input /> : 입력 상자
+    * 주요속성
+        1. type = "text"            : 텍스트
+        2. type = "password"        : 비밀번호
+        3. type = "file"            : 첨부파일
+        4. type = "datetime-local"  : 날짜/시간
+        5. type = "radio"           : 라디오 (단일선택)
+        6. type = "checkbox"        : 체크박스(복수선택)
+        7. type = "submit"          : 폼전송
+        8. type = "button"          : 일반 버튼 *추후에 JS 연동*
+        9. value = "입력된값"       : 입력상자에 입력된 값
+        10. disabled                : 사용금지
+        11. readonly                : 읽기모드
+        12. placeholder = "입력가이드" : 입력 전 가이드텍스트
+        13. name = "식별이름"          : 마크업 식별이름
+    13. <textarea> : 긴글 입력 상자
+        * rows = "행텍스트수" , cols = "열텍스트수"
+    14. <select> : 목록 상자
+        * <option> : 목록 항목
+    15. <button> : 버튼             : 일반 버튼 *추후에 JS 연동*
