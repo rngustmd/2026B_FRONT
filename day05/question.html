@@ -2,35 +2,65 @@
 <html lang='en'>
 <head>
     <meta charset='utf-8'>
-    
+    <title>Page Title</title>
+    <style>
+        body{
+            background-image: url(보건복지부.png);
+        }
+    </style>
 </head>
 <body>
-    
+    <h3>
+        코로나 백신 접종 여부 설문 조사 
+    </h3>
+    <div> 정보를 입력하세요 </div>
+    <p1>
+        생년월일 <input type="date" /> 
+        이름 <input type="text" placeholder="성명을 적으세요" />
+    </p1> <br />
+    <p2>
+        성별 <input type="radio" name="성별" /> 여
+            <input type="radio" name="성별" /> 남 
+        체중 <input type="number" placeholder="Kg" />
+    </p2> <br /> 
+    <p3>
+        접종 백신<input type="checkbox" name="백신" /> 모더나
+                <input type="checkbox" name="백신" /> 화이자
+                <input type="checkbox" name="백신" /> 아스트로제네카
+                <input type="checkbox" name="백신" /> 모르겠음
+    </p3> <br />
+    <p4>
+        접종 날짜<input type="radio" name="날짜" /> 1년 이전
+                <input type="radio" name="날짜" /> 6개월 전
+                <input type="radio" name="날짜" /> 3개월 전
+                <input type="radio" name="날짜" /> 1개월 전
+    </p4>    <br />
+
     <form>
 
-    <p1>
+    <p5>
     확진여부
-         <input type="checkbox" name="check" value="1"> 예
-         <input type="checkbox" name="check" value="1"> 아니요
-    </p1> <br/>
-    <p2>
+         <input type="radio" name="확진여부"> 예
+         <input type="radio" name="확진여부"> 아니요
+    </p5> <br/>
+    <p6>
     백신 접종 후 이상 반응 여부
     <br />
-        <input type="checkbox" name="check" value="1"> 예
-        <input type="checkbox" name="check" value="1"> 아니요
-    </p2> <br />
-    <textarea cols="80" rows="15" placeholder="'예' 선택 시 증상을 상세히 작성해주세요 "></textarea> 
+        <input type="radio" name="백신 접종 후 이상 반응 여부"> 예
+        <input type="radio" name="백신 접종 후 이상 반응 여부"> 아니요
+    </p6> <br />
+    <textarea cols="50" rows="10" placeholder="'예' 선택 시 증상을 상세히 작성해주세요 "></textarea> 
     <br />
-    <p3>
+    <p7>
     경과
-        <input type="checkbox" name="check" value="1"> 회복
-        <input type="checkbox" name="check" value="2"> 회복 중
-        <input type="checkbox" name="check" value="3"> 회복되지 않음
-        <input type="checkbox" name="check" value="4"> 후유증 동반 회복
-    </p3> <br/>
+        <input type="checkbox" name="경과"> 회복
+        <input type="checkbox" name="경과"> 회복 중 
+        <input type="checkbox" name="경과"> 회복되지 않음
+        <input type="checkbox" name="경과"> 후유증 동반 회복
+    </p7> <br/>
     <button type="submit"> 제출 </button>
     
+    // *radio , checkbox 등 name 구별 확실히*
     </form>
-
 </body>
 </html>
