@@ -56,6 +56,26 @@
     7. 삼항연산자 : 조건 ? 참 : 거짓 , true 와 false 다른값으로 표현하고 싶을떄 , 조건A ? 참A : 조건B ? 참B : 조건C ? : 참C : 거짓
         * 점수 = 90 ? '합격' : '불합격'
 
+- if
+    1. if( boolean ) code
+    2. if( boolean ){ code ; code ( 두 줄 이상 중가로{ } ) }
+    3. if( boolean ){ code; }
+        else{ code; }
+    4. if( boolean ){ 
+        code
+    }else if( boolean ){
 
+    }else{
+
+    }
+    5. if( boolean ){ }
+       if( boolean ){ }
+       if( boolean ){ }
+    6. if
+        if( boolean ){
+            if( boolean ){
+               => if 안에 if 중첩 가능 
+            }
+        } 
 
 
