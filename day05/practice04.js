@@ -31,7 +31,7 @@ console.log( max )
 // 문제 2: 별 찍기 (기본 역삼각형)
 // for 중첩 반복문을 사용하여 아래와 같은 모양의 별을 출력하시오.
 /*
-for ( let line = 5; line >= 1; line-- ){
+for ( let line = 5; line >= 1; line -- ){
     let star = ''
         for ( let 개수 = 1; 개수 <= line; 개수 ++ ){
             star += '*'
@@ -299,13 +299,13 @@ let usageMinutes = [65, 30, 140, 420];
 let html3 = ''
 for (let index = 0; index <= carNumbers.length - 1; index++){
     let 시간 = usageMinutes[index]
-    let 요금 = 1000
-    if (시간 > 30){
+    let 요금 = 1000 // 기본 요금 설정
+    if (시간 > 30){ // 30분 초과시
         let et = 시간 - 30;
         let ep = parseInt(et / 10)
         요금 = 요금 + (ep * 500)
     }
-    if (요금 > 20000){
+    if (요금 > 20000){ // 최대요금
         요금 = 20000
     }
     html3 += `${carNumbers[index]} : ${시간}분 주차 , 최종 요금 : ${요금}원 <br />`
