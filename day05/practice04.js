@@ -298,17 +298,17 @@ let carNumbers = ['210어7125', '142가7415', '888호8888', '931나8234'];
 let usageMinutes = [65, 30, 140, 420];
 let html3 = '';
 for (let index = 0; index <= carNumbers.length - 1; index++){
-    let 시간 = usageMinutes
+    let 시간 = usageMinutes[index]
     let 요금 = 1000
     if (시간 > 30){
-        let 추가시간 = 시간 - 30;
-        let 추가단위 = parseInt(추가시간 / 10);
-        요금 = 요금 + (추가단위 * 500);
+        let et = 시간 - 30;
+        let ep = parseInt(et / 10);
+        요금 = 요금 + (ep * 500);
     }
     if (요금 > 20000){
         요금 = 20000;
     }
-    html3 += `${carNumbers[index]} : ${시간}분 주차, 최종 요금 : ${요금}원 <br />`;
+    html3 += `${carNumbers[index]} : ${시간}분 주차 , 최종 요금 : ${요금}원 <br />`;
 }
 
 document.querySelector('p').innerHTML = html3 // html 출력 
