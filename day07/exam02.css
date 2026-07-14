@@ -1,0 +1,37 @@
+/* CSS 주석처리
+    선택자{ 속성명 : 속성값 ; 속성명 : 속성값 }
+*/
+/* 전체선택자 */
+*{ 
+    border : solid 3px red; /* 테두리 : 선종류 선굵기 선색상 */
+    padding: 10px; /* 안쪽여백 */
+}
+/* .클래스선택자 */
+.box1{
+    border-top : solid 1px orange; /* 위쪽 테두리 : 선종류 선굵기 선색상 */
+    border-right : dashed 2px blue; /* 오른쪽 테두리 */
+    border-left : dotted 3px black; /* 왼쪽 테두리 */
+    border-bottom : double 4px green; /* 아래쪽 테두리 */
+    border-radius : 5px 10px 15px 20px ; /* 테두리 둥근모서리 */
+    box-shadow : 3px 3px 1px red ; /* 그림자 : x축(-+) y축(-/+) 흐름정도 색상 */
+    text-align: center; /* 구역 내 텍스트 가로 정렬 */
+    width: 100px; /* 가로 사이즈 */
+    height: 100px; /* 세로 사이즈 */
+
+
+}
+.img1{ width: 100px } /* 이미지 사이즈 조정 */
+.box2{ text-align: center; } /* 구역내 입력상자 가로 정렬 */
+/* 자식선택자 > */
+.box2 > input{ 
+    width: 100px; height: 50px;
+    border-radius: 10px ;
+}
+.box3{
+    padding: 10px ; /* 안쪽여백 : 구역테두리 기준으로 안쪽여백 */
+    margin: 10px ; /* 바깥여백 : 구역테두리 기준으로 바깥여백 */
+}
+.box4{
+    padding : 10px 15px 20px 25px ; /* 위 , 오른쪽 , 아래 , 왼쪽 순서 */
+    margin : 10px 20px ; /* 위아래 , 왼오른쪽 */
+}
