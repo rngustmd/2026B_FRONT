@@ -35,3 +35,37 @@
     padding : 10px 15px 20px 25px ; /* 위 , 오른쪽 , 아래 , 왼쪽 순서 */
     margin : 10px 20px ; /* 위아래 , 왼오른쪽 */
 }
+.box5{
+    margin: 0 auto;               /* 바깥여백을 왼오른쪽을 auto 설정 vs texr-align  */
+    width: 50px ;                 /* 가로 사이즈, 주의할점 : 생략시 100% */
+    text-align: center;           /* 구역내 컨텐츠 가로 정렬 */
+    color : red;                /* 글꼴 색상 */
+    background-color: beige;    /* 구역 배경 색상 */
+}
+.s1{
+    display : inline; /* span , a 등등 마크업 기본값 */
+    width: 100px; height: 100px; /* 구역사이즈 설정 불가 */
+    padding: 20px; /* 왼/오른쪽만 적용 */
+    margin: 20px; /* 왼/오른쪽만 적용 */
+}
+.s2{ 
+    display: block; /* div , h 등등 마크업 기본값 */
+    width: 100px ; height: 100px ;
+    padding: 20px ; margin: 20px ; 
+}
+.s3{
+    display: inline-block; /* input 등등 마크업 기본값 */
+    width: 100px; height: 100px;
+    padding: 20px; margin: 20px;
+}
+.s4{
+    display: none; /* 숨기기/표시안함 */
+}
+/* 복수선택자 : , 구분하여 여러개 선택자 */
+.box6 , .box7{
+    width: 500px; padding: 20px; 
+}
+/* box-sizing : content-box : 컨텐츠 */
+.box6{ box-sizing : content-box; }
+/* box-sizing : border-box */
+.box7{ box-sizing : border-box; }

@@ -1,0 +1,22 @@
+
+.img1{ 
+    width: 300px ;
+    display: block;
+}
+.h1, .h2
+{
+    color: orange;
+    font-size: 35px;
+}
+
+.box2, .box4{
+    border: 1px solid gray;
+    background-color: rgb(11, 91, 80);
+    color: white;
+    padding: 20px;
+    margin: 0px;
+}
+
+.s1, .s2{
+    color: orange;
+}
