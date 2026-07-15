@@ -1,0 +1,17 @@
+
+body > div{
+    width: 400px;
+    height: 630px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(206, 206, 206);
+    border: 1px solid gray;
+}
+.img1{
+    width: 400px;
+}
+.flexbox1{
+    display: flex; gap: 20px; /* 사이 여백 직접 설정 */
+}
+.s1 , .s2{
+    color: orange;
+}
