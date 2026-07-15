@@ -3,52 +3,92 @@
 // 문제 1: prompt로 제품 정보 객체 만들기
 // prompt를 세 번 사용하여 사용자로부터 '제품명', '가격', '제조사'을 순서대로 입력받습니다. 
 // 입력받은 정보로 하나의 product 객체를 생성하고, 생성된 객체를 콘솔에 출력하시오.
+/*
 const name = prompt( ' 제품명을 입력하세요 ' )
 const price = Number( prompt( ' 가격을 입력하세요 ' ) )
 const company = prompt( '제조사를 입력하세요' )
 const product = { 제품명 : name , 가격 : price , 제조사 : company } 
 console.log( product )
+*/
 
 // 문제 2: prompt로 회원 가입 및 아이디 중복 확인 기능 구현
 // prompt를 세 번 사용하여 사용자로부터 '아이디', '비밀번호', '이름'을 순서대로 입력받습니다.
 // 입력받은 정보로 하나의 member 객체를 생성하고, members 배열에 저장하여 배열을 콘솔에 출력하시오.
 // 단] 입력받은 아이디가 이미 배열에 존재하면 '존재하는 아이디 입니다'를 출력하고 배열에 등록하지 않습니다.
-// const members = [
-// { id: 'user1', password: 'pass1', name: '사용자1' },
-// { id: 'user2', password: 'pass2', name: '사용자2' },
-// ];
+// const members = [ { id: 'user1', password: 'pass1', name: '사용자1' }, { id: 'user2', password: 'pass2', name: '사용자2' } ];
+// const id = prompt( '아이디를 입력하세요' )
+// const password = prompt( '비밀번호를 입력하세요' )
+// const name = prompt( '이름을 입력하세요' )
 
-
+// for( let index = 0; index <= members.length - 1; index ++ ){
+//     if( members[index].id == id ){
+//         console.log( '존재하는 아이디 입니다.' )
+//         break;
+//     }else if( index == members.length - 1){
+//         members.push( { id : id , password : password , name : name 
+//         } )
+//     }
+// } 
+// console.log( members )
 
 // 문제 3: 객체 배열의 속성 값 평균 구하기
 // scores 배열에 담긴 모든 학생의 수학(math) 점수 평균을 계산하여 콘솔에 출력하시오.
-// const scores = [
-// { name: 'A', math: 80, science: 92 },
-// { name: 'B', math: 95, science: 88 },
-// { name: 'C', math: 76, science: 78 }
-// ];
+/* let scores = [85, 92, 78, 65, 95]
+let 총점 = scores[0] + scores[1] + scores[2] + scores[3] + scores[4]
+let 평균 = 총점/scores.length
+// vs
+let sum = 0;
+for( let 인덱스 = 0 ; 인덱스 <= scores.length - 1 ; 인덱스++ ){
+    sum += scores[ 인덱스 ]
+}
+console.log( ` 총점 : ${ sum } 평균 : ${ sum / scores.length }` ) */
+const scores = [
+{ name: 'A', math: 80, science: 92 },
+{ name: 'B', math: 95, science: 88 },
+{ name: 'C', math: 76, science: 78 }
+];
+let sum = 0;
+for( let index = 0 ; index <= scores.length - 1 ; index ++ ){
+    sum += scores[index].math 
+}
+console.log( ` 총점 : ${ sum } / 평균 : ${ sum / scores.length }` )
+    
 
-
-// 문제 4: 특정 조건을 만족하는 객체 찾기
+// **문제 4: 특정 조건을 만족하는 객체 찾기
 // products 배열에서 id가 3인 상품 객체를 찾아, 해당 객체 전체를 콘솔에 출력하시오. 일치하는 객체가 없으면 "상품을 찾을 수 없습니다."를 출력합니다.
-// const products = [
-// { id: 1, name: '사과' },
-// { id: 2, name: '바나나' },
-// { id: 3, name: '포도' },
-// { id: 4, name: '딸기' }
-// ];
+
+const products = [
+{ id: 1, name: '사과' },
+{ id: 2, name: '바나나' },
+{ id: 3, name: '포도' },
+{ id: 4, name: '딸기' }
+];
+let fruit = Object.keys( products )
+for ( let index = 0 ; index <= fruit.length - 1 ; index ++ ){
+    let f = fruit[index];
+    if( products[f].id == 3 ){
+        console.log( fruit )
+    }else{ console.log( ' 상품을 찾을 수 없습니다. ')}
+}
 
 
 // 문제 5: 객체 배열 필터링하기
 // users 배열에서 isActive가 true인 사용자들만으로 구성된 새로운 배열 activeUsers를 만들고, 이 배열을 콘솔에 출력하시오.
-// const users = [
-// { id: 1, name: '유저1', isActive: true },
-// { id: 2, name: '유저2', isActive: false },
-// { id: 3, name: '유저3', isActive: true },
-// { id: 4, name: '유저4', isActive: false }
-// ];
-
-
+const users = [
+{ id: 1, name: '유저1', isActive: true },
+{ id: 2, name: '유저2', isActive: false },
+{ id: 3, name: '유저3', isActive: true },
+{ id: 4, name: '유저4', isActive: false }
+];
+const activeUsers = [ ]
+for(let i = 0 ; i <= users.length - 1 ; i++){
+    if( users[i].isActive == true ) {
+        activeUsers.push( users[i] )
+    }
+}
+for( let i = 0 ; i <= activeUsers.length - 1 ; i++ ){
+    console.log( activeUsers[i].name )
+}
 // 문제 6: 객체 배열 데이터 변환하기
 // movies 배열에 있는 각 영화 객체에서 title 속성만 추출하여, 영화 제목들로만 이루어진 새로운 배열 movieTitles를 만들고 콘솔에 출력하시오.
 // const movies = [

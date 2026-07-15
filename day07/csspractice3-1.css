@@ -1,0 +1,32 @@
+
+/* 작업용 : 완료 후 제거 */
+/*{ border: 1px red solid; }*/
+
+/* 1.로그인 감싼 구역 */
+body > div{
+    width: 500px; /* 구역 가로 사이즈 */
+    margin: 0 auto; /* 구역 가로 정렬 */
+    text-align: center ; /* 구역내 컨텐츠 가로 정렬 */
+    /* 구역 그림자 */
+    box-shadow: 2px 2px 5px rgb(206, 206, 206);
+    padding: 30px; /* 안쪽 여백 */
+}
+/* 2. 입력상자 구역 */
+div > input{ 
+    width: 150px;
+    padding: 10px;
+    border-radius: 7px; /* 둥근 모서리 */
+    border: solid 1px gray;
+    margin-bottom: 10px;
+}
+/* 3. 로그인 버튼 */
+div > button{
+    background-color: blue; /* 배경색 */
+    color: white;
+    padding: 8px 15px; /* 여백 이용한 크기조정 */
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+div > a{/* 4. 회원가입 링크 */
+    color: blue;
+}

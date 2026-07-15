@@ -1,0 +1,60 @@
+HTML : 웹페이지 뼈대 , JS : 웹페이지 행동 , CSS : 웹페이지 꾸미기 , 크롬/개발자도구 : 테스트/검증 용
+
+1. CSS 적용방법
+    1. <마크업명 style="속성명:속성값">
+    2. <head> <style> 선택자{ 속성명: 속성값; } </style> </head>
+    3. * . css파일 생성한 뒤 <head> <link rel="stylesheet" href="css파일경로"> </head>
+2. 선택자
+    1. *        : 전체선택자 , 공통CSS
+    2. 마크업명  : 특정마크업선택자
+    3. .class   : 클래스선택자 , <마크업명 class="이름정의"> , 복수
+    4. #id      : 아이디선택자 , <마크업명 id="이름정의"> , 단일
+    - 선택자 (동일한 속성인 경우) 우선순위 : #id > .class > 마크업명 > *
+    - 속성 과 선택자가 동일한 경우 마지막에 정의한 속성 적용
+    5. 자식선택자 : 상위선택자 > 하위선택자
+    6. 자손선택자 : 상위선택자 하위선택자
+    7. 복수선택자 : 선택자A, 선택자B{ }
+
+---[주요 속성]---------------------------------------------------------------------------------
+
+[1] 텍스트
+    font-family: "궁서";    /* 글꼴 */
+    font-size: 12px;        /* 글자 크기 */
+    font-style: italic;     /* 글자 기울기 */
+    font-weight: bold;      /* 글자 진하게 */
+    * 웹폰트 : 눈누/구글폰트 홈페이지 추천
+    color : red;                /* 글자 색상 */
+    word-spacing: 10px;         /* 단어간격(어간) */
+    letter-spacing: 5px;        /* 글자간격(자간) */
+    line-height: 160%;          /* 줄간격 , %백분위 */
+    text-align: center;         /* 텍스트 가로정렬 : left center right */
+    text-decoration: underline overline line-through ; /* underline : 밑줄 , overline 윗줄 , line-through 취소선 */
+    text-shadow: 5px 3px 5px blue; /* 텍스트 그림자 , x축( +오른쪽 -왼쪽) y축( +아래 -위 ) 흐림정도 색상 */
+    /* 색상 표현 방법 */
+    color : green;                   /* 방법1 : 색상명 */
+    color : rgb( 0, 255, 0);       /* 방법2 : R(레드)G(그린)B(블루) 0~255 조합 */
+    color : rgba(0, 255, 0, 0.8 ); /* a(알파) 투평도 */
+    color : #008000;               /* 방법3 : 헥스코드(*백엔드 권장) */ 
+
+[2] 구역 : HTML 마크업은 1개당 하나의 구역 갖는다.
+    border : solid 3px red;              /* 테두리 : 선종류 선굵기 선색상 */
+    border-radius : 5px 10px 15px 20px ; /* 테두리 둥근모서리 */
+    box-shadow : 3px 3px 1px red ;       /* 그림자 : x축(-+) y축(-/+) 흐름정도 색상 */
+    width: 100px;  /* 가로 사이즈 */
+    height: 100px; /* 세로 사이즈 */
+    padding: 10px; /* 안쪽여백 */
+    margin: 10px ; /* 바깥여백 : 구역테두리 기준으로 바깥여백 */
+    * margin: 0 auto; width ??px /* 구역 가로 가운데 정렬
+    background-color: beige;    /* 구역 배경 색상 */
+
+[3] display : 표시하는 방법
+    1. display : inline; /* 한 줄에 해당 구역 포함 *크기설정X, 위/아래여백X */
+        - span , a 등등
+    2. display : block; /* 한 줄 차지 *크기설정O, 여백O */
+    3. display : inline-block; /* 한 줄에 해당 구역 포함하면서 *크기설정O, 여백O */
+        - img , input 등등
+    4. display : none; /* 회면에 표시 안함 */
+
+[4] box-sizing : width 크기 기준점
+    content-box : 컨텐츠(기본값)
+    border-box : 컨텐츠+안쪽여백(padding) 포함(*권장)
