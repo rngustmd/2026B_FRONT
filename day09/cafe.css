@@ -1,12 +1,105 @@
 
+.전체{
+    background-color: rgb(201, 199, 199);
+    width: 600px;
+    height: 800px;
+}
+.음료종류{
+    display: flex;
+    border: solid 1px black;
+    justify-content: space-between;
+    height: 80px;
+    line-height: 80px;
+    flex-wrap: nowrap;
+}
+.메뉴, .현재메뉴{
+    font-size: 40px;
+    border: solid 1px black;
+    width: 200px;
+    text-align: center;
+}
+.현재메뉴{
+    background-color: rgb(254, 127, 127);
+}
+
+.메인{
+    margin: 20px;
+    background-color: white;
+    width: 560px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    width: 184px;
+    text-align: center;
+    border: solid 1px black;
+}
+.사진1{
+    width: 130px;
+    height: 90px;
+}
+.사진2{
+    width: 100px;
+    height: 70px;
+    padding-top: 20px;
+}
+.사진3{
+    width: 110px;
+    height: 85px;
+    padding-top: 5px;
+}
+
+.사진4{
+    width: 120px;
+    height: 90px;
+    padding-top: 5px;
+}
+.사진5{
+    width: 120px;
+    height: 90px;
+    padding-top: 3px;
+}
+.사진6{
+    width: 160px;
+    height: 90px;
+}
+.사진{
+    width: 120px;
+    height: 90px;
+}
+
+.고른메뉴{
+    border: solid 3px black;
+    width: 560px;
+    margin: 20px 20px 20px 20px;
+    background-color: white;
+    text-align: center;
+}
+.box2{
+    border: solid 1px black;
+    word-spacing: 16px;
+    height: 50px;
+    font-size: 25px;
+}
+.red{
+    color: red;
+}
+
+
+
+
+
 .info{
     width: 500px;
 }
 
-.box{
+.box1{
     display: flex;
-    width: 500px;
+    width: 560px;
     border: 1px solid gray;
+    margin: 20px;
+    justify-content: center;
 }
 .bu1 , .bu2{
     width: 70px;
@@ -14,8 +107,8 @@
     border-radius: 50%;
     color: white;
     text-align: center;
-    margin: 5px;
-    line-height: 35px;
+    margin: auto;
+    line-height: 17px;
 }
 .bu1{
     background-color: hotpink;
@@ -28,13 +121,7 @@
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
-.row1{
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-    border-bottom: 1px solid gray;
-}
-.row2{
+.row1, .row2{
     display: flex;
     justify-content: space-between;
     padding: 8px;
