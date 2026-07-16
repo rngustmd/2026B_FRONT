@@ -1,0 +1,155 @@
+
+.상단{
+     height: 35px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(109, 98, 139);
+    color: white;
+    font-size: 12px;
+}
+
+
+.홈{
+    font-size: 23px;
+
+}
+
+.메뉴명{
+     width: 400px;
+    text-align: center;
+
+}
+.수량1{
+    width: 200px;
+    text-align: center;
+    border-left: solid 1px black;
+}
+.가격1{
+    width: 100px;
+    text-align: center;
+    border-left: solid 1px black;
+}
+
+.메뉴{
+    display: flex; 
+    justify-content: space-evenly; 
+}
+
+.취소{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    width: 30px;
+    height: 25px;
+}
+.상품이미지{
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+}
+.상품명{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+.옵션{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 12px;
+    width: 38px;
+}
+.bu{
+    font-size: 10px;
+    height: 20px;
+    width: 25px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.수량2{
+    display: inline-block;
+    text-align: center; 
+    height: 27px;
+    width: 1px;
+
+    margin-top: 47px;
+    margin-bottom: 50px;
+}
+.가격2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2{
+      margin: 0;
+    padding: 10px;
+}
+h3{
+    margin: 0;
+    height: 35px;
+
+    background-color: rgb(109, 98, 139);
+    color: white;
+
+    font-size: 15px;
+    font-weight: normal;
+
+    text-align: center;
+    line-height: 35px;
+
+}
+.box1{
+    padding: 5px 15px;
+}
+.c1{
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+
+}
+.c2{
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    
+}
+.c3{
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    
+}
+.b0{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    
+}
+.b1{ width: 180px;
+     height: 100px;
+     background-color: rgb(101, 163, 255);
+     border-radius: 10px;
+     font-weight: bold;
+     font-size: 27px;
+}
+.b2{ width: 180px;
+     height: 100px;
+     background-color: rgb(45, 253, 45);
+     border-radius: 10px;
+     font-weight: bold;
+     font-size: 27px;
+}
+.b3{ width: 180px;
+     height: 100px;
+     background-color: rgb(241, 255, 61);
+     border-radius: 10px;
+     font-weight: bold;
+     font-size: 27px;
+}
