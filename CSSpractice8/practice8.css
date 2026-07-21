@@ -141,5 +141,6 @@ li{ list-style-type: none;} /* li 항목 글머리 제거 */
 .box1{
     color: white;
     flex-direction: column;
+    display: inline-block;
 
 }
