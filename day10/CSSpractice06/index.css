@@ -72,18 +72,17 @@ li{ list-style-type: none; } /* li 항목 글머리 제거 */
     margin: 0 auto;
 }
 
-/* [3] footer */
-#footer{
-    background-color: #2d2b29;
-}
-.footer-inner{
-    width: 1280px;
-    margin: 0 auto;
+
+#bottom-footer{
+    background-color: #2a2d32 ;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px;
+    justify-content: center;
+    gap: 100px;
+    padding: 30px;
 }
-.right-foot{
-    color: #ffffff;
+
+.box1{
+    color: white;
+    flex-direction: column;
+
 }

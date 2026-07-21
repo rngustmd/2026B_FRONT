@@ -1,0 +1,145 @@
+
+#header{
+    width:1280px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+.the{
+    font-weight: bold;
+    color: blue;
+    font-size: 23px;
+}
+.studio{
+    margin-left: 4px;
+    font-weight: bold;
+    color: black;
+    font-size: 23px;
+}
+.header-menu{
+    display:flex;
+    list-style:none;
+}
+
+.header-menu > li{
+    margin-left:20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+
+#main-img {
+    width: 1280px;
+    margin: 0 auto 50px auto;
+}
+
+#main-img img {
+    width: 100%;
+    display: block;
+}
+
+.main-inner {
+    width: 1280px;
+    margin: 0 auto 60px auto;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.box1 {
+    display: flex;
+    width: 480px;
+    gap: 15px;
+}
+
+.icon { width: 40px; height: 40px; }
+
+.text1 h4 { margin: 0 0 1px 0; font-size: 19px; }
+.text1 p { margin: 0; font-size: 17.7px; color: #555; }
+
+.gallery {
+    background-color: rgb(239, 239, 239);
+    padding: 40px 0;
+}
+
+.gallery-inner {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.사진 { width: 220px; }
+.사진 img { width: 100%; margin-bottom: 12px; display: block; }
+.사진 h4 { margin: 0 0 4px 0; font-size: 15px;  }
+.사진 p { margin: 0; font-size: 12px; color: #666; }
+
+
+
+#footer , #top-footer, #bottom-footer{
+    width: 100%;
+    margin:  0 auto;
+    margin-top: 10px;
+}
+/* 자주 사용되는 기본 css */
+*{
+    box-sizing: border-box; /* content+padding 포함 사이즈 정의 */
+    padding: 0px; margin: 0px;  /* 기본 여백 제거 */
+}
+
+a{
+    text-decoration: none;  /*  하이퍼링크 민줄 제거 */
+    color: black;
+}
+
+li{ list-style-type: none;} /* li 항목 글머리 제거 */
+
+#footer{
+    gap: 5px;
+}
+
+#top-footer{
+    padding: 20px;
+    background-color: #bcbcbc ;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    
+}
+
+.right-footer > span {
+    color: white;
+    
+}
+
+
+#img{
+    width: 200px;
+}
+.box{
+    justify-content: center;
+    align-items: center;
+}
+/* 하단 푸터 */
+#bottom-footer{
+    background-color: #2a2d32 ;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 30px;
+}
+
+.box1{
+    color: white;
+    flex-direction: column;
+
+}
