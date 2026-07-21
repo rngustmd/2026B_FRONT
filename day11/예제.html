@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <style>
+    .dark-mode{
+      background-color: black;
+      color: white;
+    }
+    </style>
+</head>
+<body>
+
+    <h1 id="title"> </h1>
+
+    <!-- 2. -->
+    <input id="usernameInput" />
+    <button onclick="작성함수()" id="submitBtn"> 
+        확인 
+    </button>
+    <p id="greeting"> </p>
+
+    <!-- 3. -->
+    <div id="colorBox"> 예제3 </div>
+    <button onclick="색상변경함수()" id="styleBtn"> 
+        스타일변경 
+    </button>
+
+    <!-- 4. -->
+     <button onclick="토글함수()" id="themeBtn"> 테마변경 </button>
+
+    <!-- 5. -->
+    <button onclick="삭제함수()" id="removeBtn"> 
+        박스 삭제 
+    </button>
+    <div id="targetBox"> 타겟 구역 </div>
+
+    <!-- 6. -->
+    <p class="item"> 요소1 </p>
+    <p class="item"> 요소2 </p>
+    <p class="item"> 요소3 </p>
+
+    <!-- 7. -->
+     <button onclick="이미지변경함수()" 
+             id="changeImgBtn">
+             이미지 변경
+     </button>
+     <img id="mainImage" />
+
+    <!-- 8. -->
+    <select onchange="목록선택함수()">
+        <option> 바나나 </option>
+        <option> 포도 </option>
+        <option> 수박 </option>
+    </select>
+
+    <!-- 9. -->
+    <input id="nameInput" />
+    <button onclick="등록함수()"> 
+        등록함수
+    </button>
+
+    <script src="예제.js"></script>
+    
+</body>
+</html>

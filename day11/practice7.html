@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <h1>미니 가계부</h1>
+
+    <h2>등록 영역</h2>
+
+    <div>
+        <span>날짜선택 :</span>
+        <input type="date" id="date">
+    </div>
+
+    <div>
+        <span>항목입력 :</span>
+        <input type="text" id="item">
+    </div>
+
+    <div>
+        <span>금액입력 :</span>
+        <input type="number" id="money">
+    </div>
+
+    <button onclick="등록함수()">
+        등록버튼
+    </button>
+
+    <h2>목록 영역</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>날짜</th>
+                <th>항목</th>
+                <th>금액</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td>2025-06-19</td>
+                <td>점심 식사</td>
+                <td>9000</td>
+            </tr>
+
+            <tr>
+                <td>2025-06-19</td>
+                <td>교통비</td>
+                <td>1500</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <script src="practice7.js"></script>
+
+</body>
+</html>

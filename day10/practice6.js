@@ -2,7 +2,11 @@
 
 /*실습 1: 성인 인증 함수
 나이(age)를 매개변수로 받아, 20세 이상이면 true를, 미만이면 false를 반환하는 isAdult 함수를 만드세요. isAdult(25)와 isAdult(17)의 결과를 각각 콘솔에 출력해 보세요.*/
-
+// 1. 설계/함수 : (1)매개변수/입력 : 나이 , (2)실행코드/처리 : 20세이상미만 분기 , (3) return/반환 : true/false
+function isAdult( 나이 ){ 
+  if( 나이 >= 20 ){ return true; }
+  else{ return false; }
+} // f end
 
 /*실습 2: 배열의 총합 구하기
 숫자로 이루어진 배열을 매개변수로 받아, for 반복문을 사용해 모든 요소의 합계를 구하여 반환하는 sumArray 함수를 만드세요. 아래 numbers 배열로 테스트해 보세요.
@@ -11,10 +15,22 @@ const numbers = [10, 20, 30, 40, 50];*/
 
 
 /*실습 3: 가장 긴 단어 찾기
-문자열로 이루어진 배열을 매개변수로 받아, for 반복문을 사용해 가장 긴 단어를 찾아 반환하는 findLongestWord 함수를 만드세요. 아래 words 배열로 테스트해 보세요.
-
-const words = ['apple', 'banana', 'kiwi', 'strawberry'];*/
-
+문자열로 이루어진 배열을 매개변수로 받아, for 반복문을 사용해 가장 긴 단어를 찾아 반환하는 findLongestWord 함수를 만드세요. 아래 words 배열로 테스트해 보세요. <-- prac4 1번 문제 유사
+*/
+// 3. (1) 입력 : 배열 (2) 처리: 반복문으로긴단어찾기 (3) 반환: 간단어반환
+// 자판기 : 1. 1000원,3번 2. 3번이 1000이하검사 3. 3번(콜라)와잔돈, 선택불가능
+const words = ['apple', 'banana', 'kiwi', 'strawberry'];
+function findLongestword( 문자열배열 ){
+  //. length : 문자열 길이 반환 속성
+  let max = 문자열배열[0] // 첫번째 요소/값이 가장 큰 값으로 지정 // apple
+  for( let index = 1 ; index <= 문자열배열.length -1 ; index ++ ){
+    // 만약에 max에 저장된 문자열길이보다 index번째 문자열길이가 이상이면 
+    if( max.length <= 문자열배열[index].length ){
+        max = 문자열배열[index] // max에 index번째 문자열 대입  
+    } // if end
+  } // for end
+} // f end
+console.log( findLongestword )
 
 /*실습 4: 게임 점수 관리하기
 let userScore = 0; 전역 변수를 만드세요. gainScore() 함수는 userScore를 10 증가시키고, loseScore() 함수는 5 감소시킵니다.

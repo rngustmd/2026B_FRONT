@@ -1,0 +1,118 @@
+*{ 
+   border: 1px solid red;
+}
+
+#main{
+width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar{
+    width: 230px;
+}
+.title{
+    height: 25px;
+    background-color: #199b90;
+    color: white;
+    padding: 10px;
+}
+.intro{
+    width: 200px;
+    margin: 5px;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.title > h3{
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.search{
+    margin-bottom: 20px;
+}
+.search > input{
+    width: 160px;
+    height: 25px;
+    border-radius: 10px;
+}
+.search > button{
+    height: 25px;
+}
+.left-menu, .comment{
+    margin-top: 40px;
+    padding: 10px;
+
+}
+
+.left-menu h4, .comment h4{
+    border-top: 2px solid black;
+    border-bottom: 0.5px solid gray;
+    padding: 10px;
+}
+
+.left-menu li, .comment li{
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{ list-style-type: none; }
+
+.center{
+    width:430px;
+}
+
+.notice{
+    margin-bottom: 60px;
+}
+
+.notice > h3 , .board > h3, .img > h3{
+    border-bottom:2px solid gray;
+    padding-bottom:10px;
+    margin-bottom:10px;
+}
+
+.list{
+    display:flex;
+    justify-content:space-between;
+    padding:8px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.img{
+    width:560px;
+    
+}
+
+.img-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.item{
+    width:260px;
+    margin-bottom:20px;
+}
+
+.item > img{
+    width:100%;
+    display:block;
+}
+
+.item > p{
+    margin:8px 0 3px;
+}
+
+.item > span{
+    color:gray;
+    font-size:13px;
+}
+
+
+
