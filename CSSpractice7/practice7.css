@@ -1,6 +1,5 @@
 *{ 
-   border: 1px solid red;
-}
+   
 
 #main{
 width: 1280px;
@@ -41,10 +40,9 @@ width: 1280px;
 .search > button{
     height: 25px;
 }
-.left-menu, .comment{
+.left-menu , .comment{
     margin-top: 40px;
     padding: 10px;
-
 }
 
 .left-menu h4, .comment h4{
