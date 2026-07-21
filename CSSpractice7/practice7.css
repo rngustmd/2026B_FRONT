@@ -1,6 +1,50 @@
-*{ 
-   border: 1px solid red;
+
+
+*{
+    box-sizing: border-box; /* content+padding 포함 사이즈 정의 */
+    padding: 0px; margin: 0px;  /* 기본 여백 제거 */
 }
+
+a{
+    text-decoration: none;  /*  하이퍼링크 민줄 제거 */
+    color: black;
+}
+
+li{ list-style-type: none;} /* li 항목 글머리 제거 */
+
+#header{
+    width: 1280px;
+    margin: 0  auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+}
+#right-header,#main-menu{
+    
+    justify-content: end;
+}
+#right-header{
+    justify-content: end;
+}
+.top-menu{
+    display: flex;
+    justify-content: end;   /*오른쪽 정렬*/
+    margin: 10px 0px;
+    column-gap: 10px;
+}
+.main-menu{
+    display: flex;
+    justify-content: end;
+    margin: 20px 0px;
+    column-gap: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.top-menu > li {margin-left: 10px;}
+.top-menu > li {margin-left: 10px;}
+
+/* -----------------  메인 부분 ------------- */
 
 #main{
 width: 1280px;
@@ -13,7 +57,7 @@ width: 1280px;
     width: 230px;
 }
 .title{
-    height: 25px;
+    height: 45px;
     background-color: #199b90;
     color: white;
     padding: 10px;
@@ -44,6 +88,7 @@ width: 1280px;
 .left-menu , .comment{
     margin-top: 40px;
     padding: 10px;
+    text-align: left;
 }
 
 .left-menu h4, .comment h4{
@@ -104,6 +149,7 @@ li{ list-style-type: none; }
     display:block;
 }
 
+
 .item > p{
     margin:8px 0 3px;
 }
@@ -113,5 +159,73 @@ li{ list-style-type: none; }
     font-size:13px;
 }
 
+/* -------------------------- 푸터 --------------- */
+
+*{ 
+    box-sizing: border-box; 
+    padding: 0px; 
+    margin: 0px; 
+}
+
+#a1 {
+    text-decoration: none; 
+    color: white;
+     
+}
+
+li { 
+    list-style-type: none; 
+}
 
 
+#footer {
+    background-color: #0c334d;
+    color: white;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.footer-inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.top-foot {
+    padding-bottom: 15px;
+    margin-bottom: px;
+    
+}
+
+
+.top-menu {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: left;
+}
+
+
+.bottom-foot {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+
+
+#main-img{
+    width: 100%;
+    display:block;
+}
+
+#main-img{
+    width: 100%;
+    height: auto;
+    display:block;
+    background-color: #f6f2e9;
+}
+#ddd{
+    width: 100%;
+    background-color: #f6f2e9;
+}
