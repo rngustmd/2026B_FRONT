@@ -92,3 +92,4 @@ function 작성함수( ){
     // 2. 가져온 DOM마크업에서 value 속성 가져오기
     const 입력값 = 입력마크업.value
     // 3. 출력할 특정한 dom에 출력하기
+}
