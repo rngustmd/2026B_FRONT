@@ -424,7 +424,7 @@
         <form>
           <div class="form-group">
             <label>신청 사원</label>
-            <select>
+            <select class="category">
               <option disabled="" selected="" hidden="">휴가 신청 사원을 선택하세요</option>
               <option>김민준</option>
               <option>이서연</option>
@@ -435,21 +435,21 @@
           <div class="input-row">
             <div class="form-group">
               <label>휴가 시작일</label>
-              <input type="date">
+              <input type="date" class="vstart">
             </div>
             <div class="form-group">
               <label>휴가 종료일</label>
-              <input type="date">
+              <input type="date" class="vend">
             </div>
           </div>
 
           <div class="form-group">
             <label>휴가 사유</label>
-            <input type="text" placeholder="예: 여름 휴가">
+            <input type="text"  class="vreason" placeholder="예: 여름 휴가">
           </div>
 
           <div class="btn-right-align">
-            <button type="button" class="btn btn-teal">신청</button>
+            <button type="button" class="btn btn-teal" onclick="vaAdd()">신청</button>
           </div>
         </form>
       </div>
@@ -457,19 +457,20 @@
       <!-- 휴가 신청 전체 목록 카드 -->
       <div class="card sub-section">
         <h2 class="card-title">휴가 신청 전체 목록</h2>
+        <div class="vacationBox"></div>
         
         <div class="vacation-card">
           <div class="user-name">김민준</div>
           <div class="date">2025-08-04 ~ 2025-08-04</div>
           <div class="reason">사유: 병원 진료</div>
-          <button type="button" class="btn-cancel">신청취소</button>
+          <button type="button" class="btn-cancel" >신청취소</button>
         </div>
 
         <div class="vacation-card">
           <div class="user-name">이서연</div>
           <div class="date">2025-07-21 ~ 2025-07-25</div>
           <div class="reason">사유: 여름 휴가</div>
-          <button type="button" class="btn-cancel">신청취소</button>
+          <button type="button" class="btn-cancel" >신청취소</button>
         </div>
       </div>
     </section>
