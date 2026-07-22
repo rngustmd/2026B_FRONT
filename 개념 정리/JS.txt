@@ -125,6 +125,24 @@
         1) JS : 함수명( 인수 , 인수 )
         2) HTML : <마크업 이벤트속성="함수명( 인수 , 인수 )">
 
+- DOM : document object model , 문서 객체 표준화
+    -> HTML( 마크업 언어 ) VS JS( 프로그래밍 언어 )
+    1. document : 내장객체 , HTML 제어/조작 가능한 객체
+    2. 주요함수 및 속성
+    1) .querySelector( CSS선택자 )      : 특정한 선택자의 마크업DOM 객체{ } 1개 반환
+    2) .querySelectorAll( CSS선택자 )   : 특정한 선택자의 마크업DOM (배열)객체 [] N개 반환
+    3) .innerHTML                       : 마크업DOM 객체 내 사이에 HTML 호출/대입 , 
+        <마크업> 여기! </마크업> , <div> <td> <h> <p> <span> 등등 주로 사용 , <input/> <img/> 불가능
+    4) .value
+        <마크업 value="여기!"> , <input/> <select> <textarea> 등등 주로 사용 , <div> <td> 불가능 
+    5) .src 
+        <마크업 src="여기!" , <img /> 등 주로 사용
+    6) .style                           : 마크업DOM 객체내 CSS 문법 대입
+    7) .classList                       : 마크업DOM 객체내 class 목록 반환
+    8) .toggle()                        : 마크업DOM 객체내 특정한 class 추가/삭제
+    9) .remove()                        : 마크업DOM 객체 삭제
+
+
 
 
 
