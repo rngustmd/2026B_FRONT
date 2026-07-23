@@ -44,6 +44,12 @@ function signup(){
         memberList = [ ]
     }
     // 마지막인덱스 : .length -1
+    /*
+    let no = 1 ;
+    if ( memberList.length > 0 ) {
+        no = memberList[ memberList.length - 1 ].no + 1 ;
+    }
+    */
     let no = memberList.length == 0 ? 1 : memberList[ memberList.length-1 ].no+1
     // 2. 객체화
     let obj = { no , id , pw }
@@ -74,3 +80,4 @@ function login( ){
     }
     alert( "회원정보가 없습니다.") // return 을 못 만남
 }
+
