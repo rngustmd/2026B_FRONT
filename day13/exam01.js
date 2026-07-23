@@ -41,7 +41,7 @@ localStorage.clear() // 모든 key 삭제
 // [*] 웹 스토리지도 문자열만 지원 *타입변환 필요*
 // [5] JSON(자바스크립트객체) , 
 // JSON.stringify( 객체 ) : 객체 타입 -> 문자타입 변환
-sessionStorage.setItem( '회원객체' , JSON.stringify( { 'name' : '유재석' , 'age' : 40 } ) )
+localStorage.clear()( '회원객체' , JSON.stringify( { 'name' : '유재석' , 'age' : 40 } ) )
 // JSON.parse( 문자열 ) : 문자열 타입 --> 객체 타입 변환
 let 회원객체 = JSON.parse( sessionStorage.getItem( '회원객체' ) )
 console.log( 회원객체 )
