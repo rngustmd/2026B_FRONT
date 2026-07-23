@@ -141,6 +141,13 @@
     7) .classList                       : 마크업DOM 객체내 class 목록 반환
     8) .toggle()                        : 마크업DOM 객체내 특정한 class 추가/삭제
     9) .remove()                        : 마크업DOM 객체 삭제
+    10) .files[0]                       : <input type="file" /> 첨부파일 객체로 반환
+
+- 함수들
+    1) "문자열".toLocalString( ) : 천단위 콤마
+    2) newDate().getFullYear()      : 연도 반환
+    3) new Date().getMonth()        : 원 반환 ( 0:1월~)
+    4) new Date().getDate()         : 일 반환 vs 
 
 
 
