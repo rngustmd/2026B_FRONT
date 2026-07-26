@@ -1,0 +1,34 @@
+.box{
+    width: 100px; height: 100px;
+    background-color: yellow; border: 1px solid red;
+}
+.box2{
+    position: static; /* 요소 배치/위치 : static(기본값) 정적 , 위치 변경불가능*/
+    left: 50px; /* 적용안됨 */
+}
+.box3{
+    position: relative; /* relative 상대(원래있던자리기준) 위치 */
+    top: 50px; /* top 위에서부터 50px 아래로 이동, 음수이면 위로 */
+    left: 50px; /* left 왼쪽에서부터 50px 오른쪽 으로 이동 , 음수이면 왼쪽 */
+}
+.box4{
+    position: absolute; /* absolute 절대(가장가까운position상위요소) 위치 */
+    top:50px; left: 50px;
+}
+.box5{
+    position: fixed; /* fixed 드바이스(화면) 위치 고정 */
+    bottom: 50px; /* bottom 아래에서부터 50px 위로 이동 , 음수이면 아래 */
+    right: 50px; /* right 오른쪽에서부터 50px 오른쪽 으로 이동 , 음수이면 왼쪽*/
+}
+.parent{  position: relative; }
+.box6{ position: absolute; top: 30px; left: 30px; }
+
+.header{
+    display: flex; background-color: beige;
+    position: sticky; /* sticky 디바이스(화면) 에서 벗어나면 위치 고정*/
+    top : 0px; /* 위쪽 붙이기 */
+    z-index: -1; /* position 사용하는 요소들간의 겹침 우선순위:높을수록*/
+}
+.header > ul{
+    display: flex;
+}

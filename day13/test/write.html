@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+
+</head>
+<body>
+
+    <div>
+        제목 : <input id="titleInput"> <br/>
+        내용 : <textarea id="contentInput"> </textarea> <br/>
+        비밀번호 : <input id="pwdInput"> <br/>
+        <button onclick="boardWrite()"> 등록 </button>
+    </div>
+
+    <body>
+    <div>
+        <a href="write.html"> 글쓰기 </a>
+        <table>
+            <thead>
+                <tr>
+                    <th> 번호 </th>
+                    <th> 제목 </th>
+                </tr>
+            </thead>
+            <tbody id="boardTbody">
+                
+            </tbody>
+        </table>
+    </div>
+
+     <div>
+        제목 : <div id="title"> 선택된 게시물 제목 자리 </div>
+        내용 : <div id="content"> 선택된 게시물 내용 자리 </div>
+        <a href="http://127.0.0.1:5500/day13/test/write.html"> 목록보기 </a>
+        <button onclick="boardDelete()"> 삭제 </button>
+        <button onclick="boardUpdateView()"> 수정 </button>
+    </div>
+
+    <script src="write.js"></script>
+</body>
+</html>

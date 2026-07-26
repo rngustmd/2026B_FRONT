@@ -1,0 +1,32 @@
+/* 1. a 기본값 인 밑줄제거,색상 변경 */
+a{ text-decoration: none; color: black;}
+/* 2. 선택자:hover , 해당 선택자에 마우스를 올렸을 때*/
+a:hover{ color: red; }
+/* 3. 선택자:visited , 해당 브라우거내 방문/접속 한 적이 있는 링크 */
+a:visited{ color : yellow; }
+/* 4. 선택자:active , 해당 선택자에 마우스 클릭 했을때 */
+a:active{ color : blue; }
+
+/* 1. 선택자::before , 해당 선택자 앞에 컨텐츠 추가 */
+.box1::before{ content : "[가상요소 '앞' 구역]" }
+.box1::after{  content: "[가상요소 '뒤' 구역]"; }
+
+/* 2. */
+li{ list-style-type: none; } /* 글머리 제거 */
+.box2 > li::before{ content: "😀"; } /* 이모지 */
+.box2 > li::after{ content: url("../맹구.jpg"); } /* 이미지 */
+
+#header{ background-color: beige; }
+#header > ul { display: flex;  justify-content: center; }
+
+.mainmenu > li{ padding: 10px; position: relative; }
+.submenu{
+    position: absolute; /* 절대위치: (position)상위요소 기준점 으로 위치 이동*/
+    top: 30px; left: -5px; /* 위에서 30px 아래로 이동 */
+    padding: 10px ;
+    background-color: beige; /* 본메뉴 와 배경색 동일 */
+    width: 50px;
+    display: none; /* 숨기기 */
+}
+/* li 에 hover(마우스 올렸을때 ) 서브메뉴의 display 표시한다. */
+.mainmenu > li:hover .submenu{ display: block; }
