@@ -1,0 +1,34 @@
+
+/* 테이블 꾸미기 */
+.basicTable{
+    border: 1px solid black;
+    width: 500px;
+}
+.basicTable th , .basicTable td{
+    border: 1px solid black;
+    padding: 5px; /* 안쪽 여백 , margin => 바깥 여백 */
+
+}
+/* 선택자: nth-child( N ), 동일한 선택자들 중에서 특정 N번째 요소 선택 */
+.basicTable td:nth-child( 1 ){ /* 중복 선택자들 중에서 첫번째 선택자 */ 
+    background-color: aqua;
+}
+.basicTable td:nth-child( 3 ){
+    background-color: beige ;
+} 
+/* 선택자[속성명] , 특정한 속성 사용하는 마크업 */
+.basicTable td[colspan]{ text-align: right; }
+
+.styleTable{ 
+    width: 700px ;
+    border-collapse: collapse; /* 하나의 테두리로 병합 */
+}
+.styleTable th ,  .styleTable td { border: 1px solid black ;}
+/* 선택자: nth-of-type(odd) 홀수odd/짝수even 선택자 */
+.styleTable > tbody > tr:nth-of-type( odd ){
+    background-color: #EEEEEE;
+}
+.styleTable > tbody > tr:hover{
+    background-color: gray; color: white;
+}
+

@@ -1,24 +1,28 @@
-// [1]
-function boardWrite(){
+console.log('write.js')
 
-    const titleInput = document.querySelector('#titleInput')
-    const contentInput = document.querySelector('#contentInput')
-    const pwdInput = document.querySelector('#pwdInput')
-
-    const title = titleInput.value;
-    const content = contentInput.value;
-    const pwd = pwdInput.value;
-
-    const obj = { title , content , pwd }
-
-    let boardList = localStorage.getItem('boardList')
-    if( boardList == null ){ boardList = []  
-    }else{ boardList = JSON.parse(boardList) }
-
-    obj.no = boardList.length == 0 ? 1 : boardList[boardList.length -1].no+1;
+function 등록함수( ){
+    //
+    let title = document.querySelector('.title').value
+    let content = document.querySelector('.content').value
+    let password = document.querySelector('.password').value
+    console.log( title , content , password )
+    //
+    let obj = { title , content , password }
+    console.log( obj )
+    //
+    let boardList = JSON.parse(localStorage.getItem('boardList') )
+        console.log(boardList)
+    if( boardList == null ){ boardList = [] }
+    console.log(boardList)
+    //
+    let no = boardList.length == 0 ? 1 : boardList[boardList -1].no+1
+        console.log(no)
+    obj.no = no
+    //
     boardList.push(obj)
-
-    localStorage.setItem('boardList' , JSON.stringify(boardList) )
-    alert('게시물 작성 성공!')
+        console.log( boardList )
+    //
+    localStorage.setItem( 'boardList' , JSON.stringify(boardList) )
     location.href = 'list.html'
 }
+

@@ -6,7 +6,7 @@ function 등록함수(){
     // 1. 입력받은 값 가져오기 
     let title = document.querySelector('.title').value;
     let content = document.querySelector('.content').value;
-    let password = document.querySelector('.password').value;
+    let password = document.querySelector('.password').value;  
         console.log( title , content , password )
     // 2. 객체 : 묶어주기
     let obj = { title , content , password }

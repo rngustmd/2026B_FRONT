@@ -1,0 +1,33 @@
+.box{ 
+    border: 1px solid red; padding: 30px;
+}
+.back1{
+    background-color: blue;
+    background-color: rgb(0, 0, 255);
+    background-color: rgba(0, 0, 255, 0.5); /* 투명도 */
+    background-color: #0000ff;
+}
+.back2{ 
+    background-image: url("배경.jpg"); /* 배경 이미지 */
+    background-repeat: no-repeat; /* 채우기 없음 (repeat -> 채우기) */
+    background-position: left top; /* 배경 이미지 위치 , left right center top bottom */
+}
+.back3{
+    background-image: url("패턴.jpg");
+    background-repeat: repeat; /* (기본값) 채우기 */
+}
+.back4{
+    background-image: url("배경.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ; /* 디바이스/브라우저 전체 크기 */
+    background-attachment: fixed; /* 패럴렉스 : 스크롤 이동해도 배경이미지 고정된다. */
+}
+
+/* 아이콘 1개(= 이미지 1개) 이므로 여러 아이콘들을 호출하는 것보다 
+   아이콘들을 하나의 이미지에 모아두고 사용하는 예제 */
+.box2{
+    width: 100px; height: 100px;
+    background-image: url("아이콘들.png");
+    background-repeat: no-repeat;
+    background-position: 10px 10px; /* 위치 이동 , left , top */
+}

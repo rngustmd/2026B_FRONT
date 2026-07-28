@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link rel='stylesheet' href='exam01.css'>
+</head>
+<body>
+
+    <table class="basicTable"> <!-- 전체 표 감싼 -->
+        <tr> <!-- 테이블 행 -->
+            <th> <!-- 테이블 헤더/제목-->
+                번호
+            </th>
+            <th> 이름 </th> <th> 국어 </th>
+            <th> 영어 </th> <th> 수학 </th> <th> 평균 </th>
+        </tr>
+        <tr>
+            <td> <!-- 테이블 데이터/셀/한칸-->
+                1
+            </td>
+            <td> 김민준 </td>  <td> 85 </td>
+            <td> 90 </td> <td> 100 </td> <td> 90 </td>
+        </tr>
+        <tr>
+            <td> 2 </td> <td> 이서아 </td>  <td> 85 </td>
+            <td> 90 </td> <td> 100 </td> <td> 90 </td>
+        </tr>
+        <tr>
+            <td> 3 </td> <td> 박도윤 </td>  <td> 85 </td>
+            <td> 90 </td> <td> 100 </td> <td> 90 </td>
+        </tr>
+        <tr>
+            <td colspan="2"> 총 응시인원 </td>
+            <td colspan="4"> 3명 </td>
+        </tr>
+    </table>
+
+    <table class="styleTable">
+        <thead> <!-- 테이블 제목 구역 : 헤더 , 목적-> 가독성,seo -->
+            <tr>
+                <th> 월 </th> <th> 제품A </th>
+                <th> 제품B </th> <th> 제품C </th> <th> 총계 </th>
+            </tr>
+        </thead>
+        <tbody> <!-- 테이블 내용 구역 : 본문 -->
+            <tr>
+                <td> 1월 </td> <td> 170 </td>
+                <td> 100 </td> <td> 80 </td> <td> 300 </td>
+            </tr>
+            <tr>
+                <td> 2월 </td> <td> 170 </td>
+                <td> 100 </td> <td> 80 </td> <td> 300 </td>
+            </tr>
+            <tr>
+                <td> 3월 </td> <td> 170 </td>
+                <td> 100 </td> <td> 80 </td> <td> 300 </td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- 테이블 하단 구역 : 푸터 -->
+            <tr>
+                <td> 합계 </td> <td> 600 </td>
+                <td> 700 </td> <td> 800 </td> <td> 2300 </td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
